@@ -3,7 +3,15 @@
 // Returns Promise
 // As request function use XMLHttpRequest;
 
+const Http = new XMLHttpRequest();
+const url='https://jsonplaceholder.typicode.com/users/1/todos';
+Http.open("GET", url);
+Http.send();
+
 function makeRequest(method, url) {
+
+        console.log(Http.responseText)
+      
 }
 
 // Class for create todoItem. Used only with user entered todos. In constructor
